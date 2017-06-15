@@ -90,7 +90,7 @@ public class PSurfaceAWT extends PSurfaceNone {
   int sketchWidth;
   int sketchHeight;
 
-  int windowScaleFactor;
+  int windowScaleFactor = 1;
 
 
   public PSurfaceAWT(PGraphics graphics) {
