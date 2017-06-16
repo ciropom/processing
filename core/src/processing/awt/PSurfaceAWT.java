@@ -228,7 +228,8 @@ public class PSurfaceAWT extends PSurfaceNone {
         oldSize = newSize;
         sketch.setSize(newSize.width / windowScaleFactor, newSize.height / windowScaleFactor);
 //        try {
-        render();
+        // DANILO TOMASONI: removed render here, it will be handled only by animation thread
+        //render();
 //        } catch (IllegalStateException ise) {
 //          System.out.println(ise.getMessage());
 //        }
@@ -247,7 +248,8 @@ public class PSurfaceAWT extends PSurfaceNone {
     public void paint(Graphics screen) {
 //      System.out.println("painting");
 //      if (useStrategy) {
-      render();
+      // DANILO TOMASONI: removed render here, it will be handled only by animation thread
+      //render();
       /*
       if (graphics != null) {
         System.out.println("drawing to screen " + canvas);
