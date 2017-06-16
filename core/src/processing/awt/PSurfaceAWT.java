@@ -281,7 +281,7 @@ public class PSurfaceAWT extends PSurfaceNone {
     */
 
 
-  synchronized protected void render() {
+  protected void render() {
     if (canvas.isDisplayable() &&
         graphics.image != null) {
       if (canvas.getBufferStrategy() == null) {
